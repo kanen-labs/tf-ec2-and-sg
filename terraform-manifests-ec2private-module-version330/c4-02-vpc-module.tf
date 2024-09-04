@@ -3,7 +3,7 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "2.78.0"
   #version = "~> 2.78"
-  map_public_ip_on_launch = true
+  map_public_ip_on_launch = false
 
   # VPC Basic Details
   name = "${local.name}-${var.vpc_name}"
